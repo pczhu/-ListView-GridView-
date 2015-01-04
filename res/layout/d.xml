@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Panel="http://schemas.android.com/apk/res/com.myzaker.ZAKERShopping"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+<!--         <com.myzaker.ZAKERShopping.Views.Component.DropDownPanel
+            android:id="@+id/category_dropDownPanel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            Panel:animationDuration="300"
+            Panel:content="@id/panelContent"
+            Panel:handle="@id/panelHandle"
+            Panel:linearFlying="true"
+            Panel:position="top"
+            Panel:weight="90.0%" > -->
+
+            <RelativeLayout
+                android:id="@+id/panelHandle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right" >
+
+                <ImageView
+                    android:id="@+id/category_macrame"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/icon_macrame" />
+
+                <ImageView
+                    android:id="@+id/drop_down_category_strap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/category_strap_marginRight"
+                    android:paddingBottom="@dimen/category_content_handle_strap_paddingbottom"
+                    android:src="@drawable/icon_category_close_state" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/panelContent"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:background="@color/transparent"
+                android:orientation="vertical" >
+				<TextView 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="agc"/>
+                <!-- <include layout="@layout/category_content_view" /> -->
+            </RelativeLayout>
+        <!-- </com.myzaker.ZAKERShopping.Views.Component.DropDownPanel> -->
+    </LinearLayout>
+
+</LinearLayout>

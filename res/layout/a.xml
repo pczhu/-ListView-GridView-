@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_layout_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <com.myzaker.ZAKERShopping.Views.Component.ButtomLineRelativeLayout
+        android:id="@+id/home_layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/home_layout_topbar_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4.0dip"
+            android:layout_marginLeft="@dimen/home_logo_image_margin"
+            android:layout_marginTop="4.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_logo" />
+    </com.myzaker.ZAKERShopping.Views.Component.ButtomLineRelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_layout_bottombar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/tabbar_bg"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/home_layout_bottombar_setting"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/square_button_bg2"
+            android:padding="2.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_settting_normal" />
+    </RelativeLayout>
+
+    <com.myzaker.ZAKERShopping.Views.Layers.home.HomeViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/home_layout_bottombar"
+        android:layout_below="@id/home_layout_topbar"
+        android:background="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/category_topbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/home_topbar_height"
+        android:background="@color/pink"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/category_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/home_logo_image_margin"
+            android:gravity="center_vertical"
+            android:text="@string/category_title"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <com.myzaker.ZAKERShopping.Views.Component.SlidExpandListVIew.SlideExpandableListView
+        android:id="@+id/category_content_expandableListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/category_group_bg"
+        android:cacheColorHint="#00000000"
+        android:indicatorLeft="@dimen/category_indicator_left" />
+
+</LinearLayout>
